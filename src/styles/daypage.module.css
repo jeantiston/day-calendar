@@ -1,0 +1,61 @@
+.parent{
+    position: relative;
+}
+
+.child{
+    position: absolute;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: repeat(49, 36px);
+    gap: 3px;
+}
+
+.blocks{
+    margin: 6px 14px 0 45px;
+    grid-template-columns: repeat(4, 75px);
+}
+
+.block{
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.blue{
+    background-color: var(--blue);
+    grid-row: 19 / 32;
+    grid-column: 1 / 2;
+}
+
+.green{
+    background-color: var(--green);
+    grid-row: 19 / 30;
+    grid-column: 2 / 3;
+}
+
+.brown{
+    background-color: var(--brown);
+    grid-row: 20 / 25;
+    grid-column: 3 / 4;
+}
+
+.yellow{
+    background-color: var(--yellow);
+    grid-row: 32 / 33;
+    grid-column: 1 / 2;
+}
+
+.orange{
+    background-color: var(--orange);
+    grid-row: 30 / 31;
+    grid-column: 2 / 3;
+}
+
+.red{
+    background-color: var(--red);
+    grid-row: 25 / 26;
+    grid-column: 3 / 4;
+}
