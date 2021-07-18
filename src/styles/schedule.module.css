@@ -24,39 +24,3 @@
     font-weight: 500;
     font-size: 13px;
 }
-
-.blue{
-    background-color: var(--blue);
-    grid-row: 19 / 32;
-    grid-column: 1 / 2;
-}
-
-.green{
-    background-color: var(--green);
-    grid-row: 19 / 30;
-    grid-column: 2 / 3;
-}
-
-.brown{
-    background-color: var(--brown);
-    grid-row: 20 / 25;
-    grid-column: 3 / 4;
-}
-
-.yellow{
-    background-color: var(--yellow);
-    grid-row: 32 / 33;
-    grid-column: 1 / 2;
-}
-
-.orange{
-    background-color: var(--orange);
-    grid-row: 30 / 31;
-    grid-column: 2 / 3;
-}
-
-.red{
-    background-color: var(--red);
-    grid-row: 25 / 26;
-    grid-column: 3 / 4;
-}
