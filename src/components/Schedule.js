@@ -1,11 +1,11 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import styles from "../styles/schedule.module.css"
 import TimeLines from "./TimeLines"
 import { getGridRowFromDate } from '../utils/timeUtils'
 
 const Schedule = () => {
 
-    const [events, setEvents] = useState([
+    const events = [
         {
             name: "Blue",
             start: new Date("2021-07-14T09:00:00"),
@@ -48,7 +48,7 @@ const Schedule = () => {
             color: "yellow",
             col: "1 / 2"
         },
-    ])
+    ]
 
     const eventBlocks = events.map( (event, i) => {
 
