@@ -35,10 +35,10 @@ const WeekDays = ({today}) => {
     return (
         <div className={styles.weekdays}>
             {
-                days.map(day => {
+                days.map((day, i) => {
                     
                     return (
-                        <div className={day.date===today ? styles.today : styles.weekday}>
+                        <div key={i} className={day.date===today ? styles.today : styles.weekday}>
                             <div className={day.date===today ? styles.dayLight: styles.day}>{day.day}</div>
                             <div className={styles.date}>{day.date}</div>
                         </div>

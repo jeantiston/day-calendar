@@ -1,13 +1,7 @@
 import TimeLine from "./TimeLine"
+import { addMinutes, getTimeString } from "../utils/timeUtils"
 
 const TimeLines = () => {
-    const addMinutes = (date, minutes) => {
-        return new Date(date.getTime() + minutes*60000);
-    }
-    
-    const getTimeString = (time) => {
-        return time.toLocaleTimeString('en-GB').slice(0,-3)
-    }
 
     const twentyFourHrs = (function() {
         let time = new Date("2021-06-17T00:00:00")
@@ -21,8 +15,8 @@ const TimeLines = () => {
         return timeStrings
     })()
 
-    return twentyFourHrs.map(time => {
-        return ( <TimeLine time={time} /> )
+    return twentyFourHrs.map((time, i) => {
+        return ( <TimeLine key={i} time={time} /> )
     })
 }
 
