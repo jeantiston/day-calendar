@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import styles from "../styles/schedule.module.css"
 import TimeLines from "./TimeLines"
 import { getGridRowFromDate } from '../utils/timeUtils'
@@ -39,14 +38,14 @@ const Schedule = () => {
             start: new Date("2021-07-14T14:30:00"),
             end: new Date("2021-07-14T15:00:00"),
             color: "orange",
-            col: "2 / 3"
+            col: "2 / 4"
         },
         {
             name: "Yellow",
             start: new Date("2021-07-14T15:30:00"),
             end: new Date("2021-07-14T16:00:00"),
             color: "yellow",
-            col: "1 / 2"
+            col: "1 / 4"
         },
     ]
 
